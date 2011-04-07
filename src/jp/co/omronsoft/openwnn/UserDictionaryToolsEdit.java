@@ -16,6 +16,7 @@
 
 package jp.co.omronsoft.openwnn;
 
+import net.caffeinelab.japaneseflick.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;

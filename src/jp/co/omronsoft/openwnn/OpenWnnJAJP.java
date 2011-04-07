@@ -17,30 +17,36 @@
 package jp.co.omronsoft.openwnn;
 
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import jp.co.omronsoft.openwnn.EN.OpenWnnEngineEN;
-import jp.co.omronsoft.openwnn.JAJP.*;
-import android.content.SharedPreferences;
+import jp.co.omronsoft.openwnn.JAJP.DefaultSoftKeyboardJAJP;
+import jp.co.omronsoft.openwnn.JAJP.OpenWnnEngineJAJP;
+import jp.co.omronsoft.openwnn.JAJP.Romkan;
+import jp.co.omronsoft.openwnn.JAJP.RomkanFullKatakana;
+import jp.co.omronsoft.openwnn.JAJP.RomkanHalfKatakana;
+import jp.co.omronsoft.openwnn.JAJP.TutorialJAJP;
+import net.caffeinelab.japaneseflick.R;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
+import android.text.method.MetaKeyKeyListener;
 import android.text.style.BackgroundColorSpan;
 import android.text.style.CharacterStyle;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.UnderlineSpan;
-import android.util.Log;
+import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
-import android.view.inputmethod.EditorInfo;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.KeyCharacterMap;
-import android.text.method.MetaKeyKeyListener;
-
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputConnection;
 
 /**
  * The OpenWnn Japanese IME class

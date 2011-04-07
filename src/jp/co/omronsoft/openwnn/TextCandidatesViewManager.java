@@ -17,37 +17,39 @@
 package jp.co.omronsoft.openwnn;
 
 import java.util.ArrayList;
+
+import net.caffeinelab.japaneseflick.R;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.os.Vibrator;
-import android.text.TextUtils;
-import android.text.TextPaint;
 import android.text.SpannableString;
 import android.text.Spanned;
-import android.text.style.ImageSpan;
+import android.text.TextPaint;
+import android.text.TextUtils;
 import android.text.style.DynamicDrawableSpan;
-import android.util.Log;
+import android.text.style.ImageSpan;
 import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.GestureDetector;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.view.View.OnTouchListener;
-import android.view.GestureDetector;
-import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.widget.AbsoluteLayout;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.EditText;
-import android.widget.AbsoluteLayout;
-import android.widget.ImageView;
-import android.graphics.drawable.Drawable;
 
 /**
  * The default candidates view manager class using {@link EditText}.

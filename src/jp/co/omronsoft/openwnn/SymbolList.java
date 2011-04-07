@@ -20,7 +20,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+
+import net.caffeinelab.japaneseflick.R;
+
 import org.xmlpull.v1.XmlPullParserException;
+
 import android.content.SharedPreferences;
 import android.content.res.XmlResourceParser;
 import android.util.Log;

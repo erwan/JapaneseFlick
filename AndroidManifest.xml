@@ -14,15 +14,14 @@
  limitations under the License.
 -->
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	  package="jp.co.omronsoft.openwnn">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="net.caffeinelab.japaneseflick">
 
-    <original-package android:name="jp.co.omronsoft.openwnn" />
+    <original-package android:name="net.caffeinelab.japaneseflick" />
 
     <uses-permission xmlns:android="http://schemas.android.com/apk/res/android" android:name="android.permission.VIBRATE"/>
-    <application android:label="OpenWnn">
+    <application android:label="Japanese Flick">
 
-        <service android:name="OpenWnnJAJP" android:label="Japanese IME"
+        <service android:name="jp.co.omronsoft.openwnn.OpenWnnJAJP" android:label="Japanese Flick"
 		 android:permission="android.permission.BIND_INPUT_METHOD"
 		 android:id="@+id/openwnn_japanese">
             <intent-filter>
@@ -31,7 +30,7 @@
             <meta-data android:name="android.view.im" android:resource="@xml/method_ja" />
         </service>
 
-        <activity android:name="OpenWnnControlPanelJAJP"
+        <activity android:name="jp.co.omronsoft.openwnn.OpenWnnControlPanelJAJP"
                 android:label="@string/preference_ime_setting_app">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

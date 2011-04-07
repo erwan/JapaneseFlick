@@ -16,11 +16,14 @@
 
 package jp.co.omronsoft.openwnn.EN;
 
+import jp.co.omronsoft.openwnn.OpenWnnEN;
+import jp.co.omronsoft.openwnn.OpenWnnEvent;
+import jp.co.omronsoft.openwnn.WnnWord;
+import net.caffeinelab.japaneseflick.R;
 import android.content.Context;
 import android.preference.DialogPreference;
 import android.util.AttributeSet;
 import android.widget.Toast;
-import jp.co.omronsoft.openwnn.*;
 
 /**
  * The preference class to clear user dictionary for English IME.

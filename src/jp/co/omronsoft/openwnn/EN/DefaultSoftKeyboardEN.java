@@ -16,15 +16,16 @@
 
 package jp.co.omronsoft.openwnn.EN;
 
-import jp.co.omronsoft.openwnn.*;
+import jp.co.omronsoft.openwnn.DefaultSoftKeyboard;
+import jp.co.omronsoft.openwnn.OpenWnn;
+import jp.co.omronsoft.openwnn.OpenWnnEvent;
+import net.caffeinelab.japaneseflick.R;
 import android.content.SharedPreferences;
 import android.inputmethodservice.Keyboard;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
-
-import android.util.Log;
 
 /**
  * The default Software Keyboard class for English IME.

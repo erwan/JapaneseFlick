@@ -16,20 +16,21 @@
 
 package jp.co.omronsoft.openwnn;
 
+import net.caffeinelab.japaneseflick.R;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.inputmethodservice.Keyboard;
+import android.inputmethodservice.KeyboardView;
+import android.media.MediaPlayer;
+import android.os.Vibrator;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
-import android.inputmethodservice.Keyboard;
-import android.inputmethodservice.KeyboardView;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-import android.content.res.*;
-import android.os.Vibrator;
-import android.media.MediaPlayer;
-import android.content.Context;
-
-import android.util.Log;
 
 /**
  * The default software keyboard class.

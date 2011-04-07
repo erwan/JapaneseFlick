@@ -16,6 +16,7 @@
 
 package jp.co.omronsoft.openwnn;
 
+import net.caffeinelab.japaneseflick.R;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 

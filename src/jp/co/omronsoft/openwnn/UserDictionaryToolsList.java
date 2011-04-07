@@ -16,6 +16,11 @@
 
 package jp.co.omronsoft.openwnn;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+
+import net.caffeinelab.japaneseflick.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -26,25 +31,21 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Display;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
-import android.view.KeyEvent;
 import android.view.View;
+import android.view.View.OnFocusChangeListener;
+import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.View.OnFocusChangeListener;
-import android.view.View.OnTouchListener;
+import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Button;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 
 
 /**
